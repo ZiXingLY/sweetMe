@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://yanshi.sucaihuo.com/jquery/23/2353/demo/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>雪糕给你吃</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/a.js"></script>
+  <style>
+
+    .zzz{
+      color: #ffa56c;
+      position: relative;
+      top: 0px;
+      left: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /*border: white solid 2px;*/
+      height: 66px;
+      /*width: 100%;*/
+      /*z-index: 99;*/
+    }
+    #elapseClock{
+      position: relative;
+      left: 0px;
+      /*text-align:center;*/
+      font-size:18px;
+      margin-top:10px;
+      margin-bottom:10px
+    }
+
+    #elapseClock .digit{
+      position: relative;
+      left: 0px;
+      font-family:"digit";
+      font-size:36px
+    }
+  </style>
+</head>
+
+<body>
+<div class="zzz">
+  <div id="elapseClock"></div>
+</div>
+
+
+  <div class="fake circle"></div>
+
+  <a class="outerhover" href="#">
+    <div class="circle">
+      <div class="popsicle">
+        <div class="creamborder"></div>
+        <div class="drip"></div>
+        <div class="cream"></div>
+        <div class="eye"></div>
+        <div class="eye"></div>
+        <div class="mouth"></div>
+      </div>
+    </div>
+    <div class="stick"></div>
+
+  </a>
+
+  <div class="embellishments">
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+  </div>
+
+  <div class="hint">点击雪糕</div>
+
+  <div style="position: static; display: none; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;"><div id="trans-tooltip"><div id="tip-left-top" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-left-top.png&quot;);"></div><div id="tip-top" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-top.png&quot;) repeat-x;"></div><div id="tip-right-top" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-right-top.png&quot;);"></div><div id="tip-right" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-right.png&quot;) repeat-y;"></div><div id="tip-right-bottom" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-right-bottom.png&quot;);"></div><div id="tip-bottom" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-bottom.png&quot;) repeat-x;"></div><div id="tip-left-bottom" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-left-bottom.png&quot;);"></div><div id="tip-left" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-left.png&quot;);"></div><div id="trans-content"></div></div><div id="tip-arrow-bottom" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-arrow-bottom.png&quot;);"></div><div id="tip-arrow-top" style="background: url(&quot;chrome-extension://ikkbfngojljohpekonpldkamedehakni/imgs/map/tip-arrow-top.png&quot;);"></div></div>
+
+
+
+
+</body>
+
+</html>
+<script>
+    timeElapse();
+    setInterval(function () {
+        timeElapse();
+    }, 500);
+</script>
